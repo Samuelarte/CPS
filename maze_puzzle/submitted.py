@@ -18,9 +18,9 @@ files and classes when code is run, so be careful to not modify anything else.
 from collections import deque
 import heapq
 
-# =====================
+
 # Breadth-First Search
-# =====================
+
 def bfs(maze):
     """
     Breadth-First Search (BFS) for solving the maze.
@@ -51,14 +51,11 @@ def bfs(maze):
     return []  # No solution found
 
 
-# =====================
+
 # Depth-First Search
-# =====================
+
 def dfs(maze):
-    """
-    Depth-First Search (DFS) for solving the maze.
-    Uses a stack (LIFO) to explore deeper paths first.
-    """
+
     start = maze.start
     goal = maze.waypoints[0]
 
@@ -84,9 +81,9 @@ def dfs(maze):
     return []  # No solution found
 
 
-# =====================
+
 # A* Search Algorithm
-# =====================
+
 def heuristic(a, b):
     """
     Manhattan Distance heuristic function.
